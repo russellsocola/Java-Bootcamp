@@ -2,7 +2,7 @@ package sem08_Herencia;
 
 import java.util.Scanner;
 
-public class PoligonoRegular extends Figura {
+public abstract class PoligonoRegular extends Figura {
     protected double base;
     protected double altura;
 
@@ -30,4 +30,7 @@ public class PoligonoRegular extends Figura {
         System.out.println("Ingresa la base en cm");
         base  = numero.nextDouble();
     }
+
+    @Override
+    public abstract double calcularArea();
 }
